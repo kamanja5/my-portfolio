@@ -453,7 +453,7 @@ input{
   width: 70px;
   background: none;
 }
-/* Container for the Job Title and Company Info */
+
 .contact-info {
   display: flex;
   align-items: center;
@@ -462,21 +462,16 @@ input{
   border-radius: 5px;
   margin-bottom: 15px;
 }
-/* Job Details Section */
 .cont-details {
   display: flex;
   flex-direction: column;
 }
-
-/* Job Title Styling */
 .contact-input {
-  color: black; /* Google Yellow */
+  color: black; 
   font-size: 15px;
   font-weight: bold;
   margin: 0;
 }
-
-/* Company and Dates Styling */
 .contact-details {
   color: rgb(125, 18, 224);
   font-family: "Roboto", sans-serif;
