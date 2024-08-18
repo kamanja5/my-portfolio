@@ -28,37 +28,26 @@ body{
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  border-left: none;
-  border-right: none;
   justify-content: space-between;
-  margin-right: 15px;
-  list-style-image: none;
-  list-style-position: outside;
   list-style-type: none;
-  padding-bottom: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 8px;
   position: relative;
+  width: 100%;
   text-align: center;
-  text-decoration-color: rgb(48, 52, 61);
   text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
+  padding: 7px 10px;
   text-size-adjust: 100%;
   transition-delay: 0s;
   transition-duration: 0.2s;
   transition-property: all;
   transition-timing-function: ease-in-out;
-  width: 100%;
 }
-
 .nav-link[href="#scrollspyHeading1"].active{
   border-top: 2px solid red; /* Color for About */
   border-bottom:3px solid red;
   background: none;
   border-radius: 0;
   color: red;
+  transition: 0.4s;
   animation-timing-function: ease-in-out;
 }
 
@@ -66,8 +55,11 @@ body{
   border-top: 2px solid blueviolet; /* Color for About */
   border-bottom:3px solid blueviolet;
   background: none;
+  width: 100%;
+  transition: 0.3s;
   border-radius: 0;
   color: blueviolet;
+  animation-timing-function:ease-in-out;
 }
 
 .nav-link[href="#scrollspyHeading3"].active {
@@ -76,7 +68,9 @@ body{
   background: none;
   border-radius: 0;
   color: #dc3545;
-  animation-timing-function: ease-in-out;
+  width: 100%;
+  transition: 0.3s;
+  animation-timing-function:ease-in-out;
 }
 
 .nav-link[href="#scrollspyHeading4"].active {
@@ -93,7 +87,7 @@ body{
   background: none;
   border-radius: 0;
   color: #dc3545;
-  animation-timing-function: ease-in-out;
+  animation:ripe 0.3s ease-in-out;
 }
 .nav-link[href="#scrollspyHeading6"].active {
   border-top: 1px solid blueviolet; /* Color for Contact*/
@@ -101,7 +95,14 @@ body{
   background: none;
   border-radius: 0;
   color: blueviolet;
-  animation-timing-function: ease-in-out;
+  animation: ripe 0.3s ease-in-out;
+}
+@keyframes ripe {
+  from { border-top-color: #bab6df; }
+  to { border-bottom-color: #c5c1ea; }
+  100%{
+    width: 100%;
+  }
 }
 .homepage{
   padding-top: 150px;
@@ -275,47 +276,62 @@ color: #cbc6fb;
 .typed-cursor {
   display: none;  /* Hides the cursor character */
 }
-
-/* Optional: Add animation to move cursor with the text */
-@keyframes typing {
-  from { border-right-color: #bab6df; }
-  to { border-right-color: #bab6df; }
-}
-
 #skills {
   padding-right: 10px;
   border-right: 3px solid #000;  /* The moving cursor */
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 1s steps(80, end) infinite;
+  animation: typing 2s infinite;
 }
+
+/* Optional: Add animation to move cursor with the text */
+@keyframes typing {
+  from { border-right-color: #bab6df; }
+  to { border-right-color: #c5c1ea; }
+  100%{
+    width: 100%;
+  }
+}
+
 .services-area{
   padding-top: 10px;
   padding-bottom: 90px;
 }
-.col .p-3{
-  padding: 40px;
-  background: #ffffff;
+.col{
+  margin-right: 10px;
+  background: #fff;
   width: 400px;
   height: 240px;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-.col:hover{
-  background-color: #dc3545;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+ .col:hover{
+border-left:4px solid #6d14e1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .king{
-  color: #dc3545;
+  color: rgb(128, 20, 229);
   font-size: 1.5rem;
   padding-top: 20px;
   padding-bottom: 10px;
 }
+.king::before{
+  content: "";
+  clear: right;
+	display: block;
+	overflow: hidden;
+  width: 100px;
+  height: 8px;
+  background-color: #8383a0;
+  position: absolute;
+	right: 15px;
+	top: 4px;
+}
 .king:hover{
   font-size: 1.7rem;
 }
-.service{
+.Service{
+  color:#505050;
   padding-bottom: 20px;
 }
 .pg{
@@ -324,4 +340,147 @@ color: #cbc6fb;
 #scrollspyHeading4{
   background-color: #fff;
   padding-top: 30px;
+  padding-bottom: 20px;
+}
+.image{
+  background: purple;
+}
+.header{
+  font-size: 40px;
+}
+.col-4{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 600px;
+  height: 200px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  border-left: 2px solid blueviolet;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.pointer{
+  position: absolute;
+  left: 0;
+	width: 23.5px;
+	height: 16px;
+  border-left:2px solid blueviolet;
+	background: blueviolet;
+	clip-path: polygon( 70% 10%, 100% 55%, 70% 100%, 0% 100%, 0 10%);
+  padding-left: 10px;
+  margin-top: 30px;
+}
+.heading{
+background: none;
+height: 50px;
+border: none;
+text-align: center;
+margin-top: 10px;
+box-shadow: none;
+z-index: 1;
+}
+.job-title{
+  color: blueviolet;
+}
+.job-details{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.job-company{
+  color: #000;
+}
+.education-details{
+  color: rgb(138, 132, 132);
+}
+
+#scrollspyHeading5{
+padding-top: 40px;
+padding-bottom: 20px;
+}
+.col-sm-8{
+  position: relative;
+  width: 800px;
+  padding-bottom: 60px;
+}
+input{
+  display: inline;
+  width: 350px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding-left: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  color: #7c7c7c;
+}
+.subject{
+  width: 700px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form{
+  height: 100px;
+  width: 700px;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.message{
+  position: absolute;
+  letter-spacing: 1px;
+  font-weight: 400;
+  width: 140px;
+  height: 45px;
+  left: 250px;
+  background: blueviolet;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  margin-top: 10px;
+  transition:0.5s ease-in-out;
+}
+.message:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid blueviolet;
+  transform: rotate(10deg);
+}
+.image3{
+  margin-top: 10px;
+  width: 70px;
+  background: none;
+}
+/* Container for the Job Title and Company Info */
+.contact-info {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  max-width: 400px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+/* Job Details Section */
+.cont-details {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Job Title Styling */
+.contact-input {
+  color: black; /* Google Yellow */
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Company and Dates Styling */
+.contact-details {
+  color: rgb(125, 18, 224);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 5px 0 0 0;
 }
