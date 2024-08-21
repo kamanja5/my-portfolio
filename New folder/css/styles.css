@@ -5,11 +5,9 @@ body{
   background-color: rgb(249, 248, 248);
   box-sizing: border-box;
 }
-
 #header-nav{
   position: fixed;
   top: 0;
-  right: 0;
   display: flex;
   z-index: 10;
   width: 100%;
@@ -18,11 +16,15 @@ body{
   background-color: #fff;
 }
 .navbar-brand{
+  text-decoration: none;
     font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: normal;
     color:rgb(126, 10, 236);
     font-size: 2.15rem;
+}
+.navbar-brand:hover{
+  color: rgb(126, 10, 236);
 }
 .nav-item .nav-link{
   font-family: "Roboto", sans-serif;
@@ -34,7 +36,8 @@ body{
   width: 100%;
   text-align: center;
   text-decoration-line: none;
-  padding: 7px 10px;
+  padding: 7px 15px;
+  margin-right: 20px;
   text-size-adjust: 100%;
   transition-delay: 0s;
   transition-duration: 0.2s;
@@ -42,23 +45,23 @@ body{
   transition-timing-function: ease-in-out;
 }
 .nav-link[href="#scrollspyHeading1"].active{
-  border-top: 2px solid red; /* Color for About */
-  border-bottom:3px solid red;
+  border-top: 2px solid #dc3545; /* Color for About */
+  border-bottom:3px solid  #dc3545;
   background: none;
   border-radius: 0;
-  color: red;
+  color: #dc3545;
   transition: 0.4s;
   animation-timing-function: ease-in-out;
 }
 
 .nav-link[href="#scrollspyHeading2"].active {
-  border-top: 2px solid blueviolet; /* Color for About */
-  border-bottom:3px solid blueviolet;
+  border-top: 2px solid #dc3545; /* Color for About */
+  border-bottom:3px solid #dc3545;
   background: none;
   width: 100%;
   transition: 0.3s;
   border-radius: 0;
-  color: blueviolet;
+  color: #dc3545;
   animation-timing-function:ease-in-out;
 }
 
@@ -104,6 +107,9 @@ body{
     width: 100%;
   }
 }
+.navbar-toggler, .navbar-header .icon-bar{
+border: 2px solid blueviolet;
+}
 .homepage{
   padding-top: 150px;
   padding-bottom: 90px;
@@ -147,7 +153,7 @@ color: #cbc6fb;
   font-size: 2.95rem;
 }
 .text-dyna{
-  color: #686767;
+  color: #73708e;
 	font-size: 18px;
 	margin-top: 10px;
 	line-height: 28px;
@@ -169,20 +175,34 @@ color: #cbc6fb;
   margin-top: 15px;
   color: #fff;
   font-weight: 600;
-  background-color: blueviolet;
+  background-color: #473ef9;
   border: 1px solid blueviolet;
   letter-spacing: 2px;
+  transition: transform 0.4s ease;
+}
+.btn-homepage:hover{
+  background-color: white;
+  color: black;
+  transform: rotate(10deg);
+  border: 1px solid #473ef9;
 }
 .btn-homepage1{
   padding:  16px 35px 16px 35px;
   border-radius: 13px;
   margin-right: 20px;
   margin-top: 15px;
-  color: blueviolet;
+  color: #473ef9;
   font-weight: 600;
   background-color: transparent;
-  border: 1px solid rgb(100, 0, 194);
-  letter-spacing: 2px;
+  border: 1px solid #473ef9;
+  letter-spacing: 1px;
+  transition: transform 0.4s ease;
+}
+.btn-homepage1:hover{
+  background-color: blueviolet;
+  color: white;
+  transform: rotate(10deg);
+  border: 1px solid white;
 }
 .section1{
   padding-top: 60px;
@@ -235,9 +255,16 @@ color: #cbc6fb;
   border: 1px solid blueviolet;
   border-radius: 18px;
   margin-top: 6px;
+  transition: transform 0.4s ease;
+}
+.btn-aboutpage:hover{
+  background-color: white;
+  color: black;
+  transform: rotate(10deg);
+  border: 1px solid blueviolet;
 }
 #scrollspyHeading3{
-  padding-top: 50px;
+  padding-top: 80px;
 }
 .underline {
 	position: relative;
@@ -339,7 +366,7 @@ border-left:4px solid #6d14e1;
 }
 #scrollspyHeading4{
   background-color: #fff;
-  padding-top: 30px;
+  padding-top: 80px;
   padding-bottom: 20px;
 }
 .image{
@@ -419,7 +446,7 @@ input{
   margin-bottom: 20px;
 }
 .form{
-  height: 100px;
+  height: 150px;
   width: 700px;
   margin-bottom: 20px;
   border: none;
@@ -440,7 +467,8 @@ input{
   border-radius: 7px;
   border: none;
   margin-top: 10px;
-  transition:0.5s ease-in-out;
+  transition-property: all;
+  transition: 0.3s ease 0s;
 }
 .message:hover{
   background-color: white;
@@ -478,4 +506,23 @@ input{
   font-size: 14px;
   letter-spacing: 1px;
   margin: 5px 0 0 0;
+}
+.footer{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.line{
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #bbbbbb;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.fa{
+  color: #000;
+  font-size: 28px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
