@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="New folder/css/bootstrap.min.css">
+        <link rel="stylesheet" href="New folder/css/typed.css">
         <link rel="stylesheet" href="New folder/css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -47,15 +48,22 @@
               </nav>
         </header>
         <main data-bs-spy="scroll" data-bs-target="#header-nav" data-bs-root-margin="0px 0px -40%"
-        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2" tabindex="0">
           <div>
           <div class="homepage" id="scrollspyHeading1">
           <div class="container">
             <div class="row">
               <div class="col-lg-6 section1">
+                <div  class="hero-content">
                   <h5 class="heading1">HELLO</h5>
               <h1>I'm <b class="bold">Kamanja</b></h1>
-              <h1><b class="bold">a</b> <span id="skills"></span></h1>
+              <h2 class="cd-headline clip is-full-width">a
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Web Designer</b>
+                    <b class="headline2">Web Developer</b>
+                    <b>Freelancer</b>
+                </span>
+              </h2>
               <p class="text-dyna">From Kenya, Nairobi with experience in designing, coding,
                  and deploying responsive websites. Proficient in HTML, CSS, JavaScript,
                   and frameworks like React and Angular. Strong background in server-side
@@ -65,8 +73,9 @@
               <button class="btn-homepage" onclick="location.href='#scrollspyHeading5'">Hire me</button>
               <button class="btn-homepage1">Portfolio</button>
               </div>
+              </div>
                 <div class="col-lg-6">
-                  <img src="undraw_Designer_girl_re_h54c.png" alt="web developers picture" class="image1 img-fluid">
+                  <img src="https://i.pinimg.com/564x/b6/cf/ec/b6cfec409bdc03d0969cf6a26298b0c8.jpg" alt="web developers picture" class="image1 img-fluid">
                 </div>
             </div>
           </div>
@@ -86,14 +95,16 @@
                     development with Node.js and databases. Excellent problem-solving skills 
                     and a passion for creating seamless user experiences.
                </p>
-               <p>
-               <i class="fa-brands fa-facebook-f icons"></i>
-               <i class="fa-brands fa-twitter icons"></i>
-               <i class="fa-brands fa-linkedin icons"></i>
-               <i class="fa-brands fa-tiktok icons"></i>
-               </p>
-               <button class="btn-aboutpage">
-  Download CV
+               <div class="about-social">
+               <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+               </ul>
+               </div>
+               <button class="btn-aboutpage"><a href="#">
+  Download CV<i class="fa-solid fa-download"></i></a>
                </button>
               </div>
             </div>
@@ -164,13 +175,11 @@
                   </div>
               </div>
               </div>
+              <section class="col-lg-6 education">
               <div class="container">
                 <div class="row justify-content-start">
                   <div class="col-4 heading">
                     <h2>Education</h2>
-                  </div>
-                  <div class="col-4 heading">
-                    <h2>Experience</h2>
                   </div>
                   <div class="col-4">
                     <div class="pointer"></div>
@@ -183,17 +192,24 @@
                   <div class="col-4">
                     <div class="pointer"></div>
                     <div class="job-details">
-                      <h5 class="job-title">Lead Ui/Ux Designer</h5>
-                      <p class="job-company">Google/ 2024 - Current</p>
-                      <p class="education-details">Currently leading a team in designing innovative user interfaces,<br> focusing on enhancing user experience and accessibility.</p>
+                      <h5 class="job-title">Diploma in Web Design</h5>
+                      <p class="job-company">Mount Kenya University / 2018 - 2019</p>
+                      <p class="education-details">Completed a comprehensive program in Web Design, covering<br> HTML, CSS, JavaScript, and responsive design techniques.</p>
                   </div>
+                  </div>
+                  </section>
+                  <section class="col-lg-6 experience">
+                    <div class="container">
+                      <div class="row justify-content-start">
+                        <div class="col-4 heading">
+                    <h2>Experience</h2>
                   </div>
                   <div class="col-4">
                     <div class="pointer"></div>
                     <div class="job-details">
-                      <h5 class="job-title">Diploma in Web Design</h5>
-                      <p class="job-company">Mount Kenya University / 2018 - 2019</p>
-                      <p class="education-details">Completed a comprehensive program in Web Design, covering<br> HTML, CSS, JavaScript, and responsive design techniques.</p>
+                      <h5 class="job-title">Lead Ui/Ux Designer</h5>
+                      <p class="job-company">Google/ 2024 - Current</p>
+                      <p class="education-details">Currently leading a team in designing innovative user interfaces,<br> focusing on enhancing user experience and accessibility.</p>
                   </div>
                   </div>
                   <div class="col-4">
@@ -204,6 +220,7 @@
                       <p class="education-details">Currently leading a team in designing innovative user interfaces,<br> focusing on enhancing user experience and accessibility.</p>
                   </div>
                   </div>
+                  </section>
                 </div>
                     </div>
                   </div>
@@ -211,7 +228,52 @@
             </div>
           </div>
           </section>
-          <section class=" section area pt-100 pb-70 section-bg" id="scrollspyHeading5">
+        </section>
+        <section class="services-area pt-100 pb-70 section-bg" id="scrollspyHeading5">
+          <div class="container">
+            <!-- section Headding -->
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2">
+                <div class="section-heading text-center mb-50">
+                  <h2 class="header">Portfolio</h2>
+                  <span class="underline"></span>
+                  <p class="pg">Showcasing some of my best work.</p>
+                  </div>
+              </div>
+              </div>
+              </div>
+              <div class="row">
+                <div class="portfolio-list text-center mb-40">
+                  <div class="controls">
+<button type="button" data-filter=".all" class="control">All</button>
+<button type="button" data-filter=".photography" class="control">Photography</button>
+<button type="button" data-filter=".web" class="control">Web</button>
+<button type="button" data-filter=".brand" class="control">Brand</button>
+<button type="button" data-filter=".illustrations" class="control">Illustrations</button>
+                  </div>
+                  <div class="work">
+<div class="mix all photography web">
+  <img src="pics/1.jpg" alt="photo">
+</div>
+<div class="mix all brand illustrations">
+  <img src="pics/2.jpg" alt="photo">
+</div>
+<div class="mix all photography">
+  <img src="pics/3.jpg" alt="photo">
+</div>
+<div class="mix all photography illustrations">
+  <img src="pics/4.jpg" alt="photo">
+</div>
+<div class="mix all web brand ">
+  <img src="pics/5.jpg" alt="photo">
+</div>
+<div class="mix all photography illustrations ">
+  <img src="pics/6.jpg" alt="photo">
+</div>
+                  </div>
+                </div>
+            </section>
+          <section class=" section area pt-100 pb-70 section-bg" id="scrollspyHeading6">
             <div class="container">
               <!-- section Headding -->
               <div class="row">
@@ -226,16 +288,15 @@
                     <div class="container">
                       <div class="row">
                         <div class="col-sm-8">
+                          <form action="#" method="post">
                           <h3>Contact Me</h3>
-                          <input type="text" value="Name" placeholder="Name" required class="Contact">
-                          <input type="email" value="Email" placeholder="Email" required class="Contact">
-                          <input type="text" value="Subject" placeholder="Subject" required class="subject">
-                          <div class="input-group">
-                            <textarea class="form" placeholder="Message"></textarea>
-                        
-                          </div>
-                          <button class="message">Send Message</button>
+                          <input type="text" name="name" placeholder="Your Name" class="Contact" required>
+                          <input type="email" name="Email"  placeholder="Your Email"class="Contact" required>
+                          <input type="text" name="Subject" placeholder="Your subject" class="subject" required>
+                          <div><textarea class="form" placeholder="Message" required></textarea></div>
+                        <div><button class="message">Send Message</button></div>
                         </div>
+                      </form>
      <div class="col-sm-4">
       <h3>Contact Info</h3>
       <p>Always available for freelance work if the right project comes along, Feel free to contact me!</p>
@@ -297,9 +358,19 @@
   </div>
   </section>
         </main>
+        <footer class="footer-area">
+          <div class="container">
+            <div class="footer-text text-center pt-30 pb-30">
+              <p>&copy; Copyright <b>CodeFolio.</b> All Rights Reserved</p>
+            </div>
+          </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="New folder/js/typed.js"></script>
         <script src="New folder/js/script.js"></script>
     </body>
 </html>
