@@ -271,9 +271,8 @@
                   </div>
                 </div>
             </section>
-          <section class=" section area pt-100 pb-70 section-bg" id="scrollspyHeading6">
+          <section class="section area pt-100 pb-70 section-bg" id="scrollspyHeading6">
             <div class="container">
-              <!-- section Headding -->
               <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                   <div class="section-heading text-center mb-50">
@@ -320,16 +319,37 @@
                   </div>
                 </div>
               </div>
-                        <div class="col-lg-6 col-md-6">
-                          <form action="#" method="post">
-                          <h3>Contact Me</h3>
-                          <input type="text" name="name" placeholder="Your Name" class="Contact" required>
-                          <input type="email" name="Email"  placeholder="Your Email"class="Contact" required>
-                          <input type="text" name="Subject" placeholder="Your subject" class="subject" required>
-                          <div><textarea class="form" placeholder="Message" required></textarea></div>
-                        <div><button class="message">Send Message</button></div>
-                        </div>
-                      </form>
+              <div class="port">
+                <div class="contact-form">
+                  <form action="#" id="contact-form" method="POST">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                        <p id="nameStatus" class="formError"></p>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                        <p id="emailStatus" class="formError"></p>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
+                        <p id="phoneStatus" class="formError"></p>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" id="subject" name="subject" placeholder="Your Subject">
+                        <p id="subjectStatus" class="formError"></p>
+                      </div>
+                      <div class="col-12">
+                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        <p id="messageStatus" class="formError"></p>
+                      </div>
+                      <div class="col-12" class="message">
+                        <input class="button" type="submit" value="Send Message">
+                        <div class="status-message"></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
       <div class="row">
         <div class="col-lg-6 col-md-6">
           <div class="google-map">
@@ -349,7 +369,7 @@
         </div>
         </div>
         </div>
-
+</div>
       </div>
       
      </div>
